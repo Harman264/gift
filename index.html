@@ -27,22 +27,11 @@
             border: 2px solid black;border-radius: 10px;
             position: relative;
         }
-        #center {
-            position: absolute;
-            top: 86%;
-            width: 100%;
-            left: 0.5%;
-            text-align: center;
-            font-size: 18px;
-           
-        }
+       
         button{
-            padding: 5px;
-            font-size: large;
-            font-weight: bold;
-            color: orange;
-            background-color: crimson;
-            border: 0px solid crimson ; border-radius: 8px;
+            border-radius: 10px;
+            margin: 0px;
+            padding: 0px;  height: 300px;
         }
         button:hover{
             box-shadow: 5px 5px 5px black;
@@ -236,14 +225,7 @@
  background-size:180% 150%;  
 		    margin-left:0px;
 	}
-	 #center {
-            position: absolute;
-            top: 610px;
-            width: 100%;
-            left: 210px;
-            text-align: center;
-            font-size: 18px;
-        }
+	 
 	h1{
 	width:80%;left:35%;margin-bottom:3px;
 	}
@@ -256,7 +238,7 @@
 	    }
 	    .gallery{
             width: fit-content;
-            margin-left: 20px;
+            margin-left: 30px;
         }
     </style>
 </head>
@@ -276,9 +258,8 @@
         </td>
         <td rowspan="3"> 
             <div id="box">
-            <img src="https://images.pexels.com/photos/1303079/pexels-photo-1303079.jpeg?auto=compress&cs=tinysrgb&w=600" alt="close" id="close" style="border-radius: 10px; width: 430px;">
-            </div> 
-            <div id="center"><button id="btn" onclick="show()">Open</button></div> 
+           <button id="btn" onclick="show()"> <img src="https://images.pexels.com/photos/1303079/pexels-photo-1303079.jpeg?auto=compress&cs=tinysrgb&w=600" alt="close" id="close" style="border-radius: 10px; width: 430px; height: 300px;"></button>
+            </div>  
         </td>
         <td>
             <div style="display: flex;"><span id="3h" style="color: red; font-size: 40px; margin-top: 24%;">❤️</span>
