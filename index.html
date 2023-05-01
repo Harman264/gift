@@ -50,16 +50,14 @@
         
         #div1,#div5,#div3 {
             width: 300px;         height: 250px;
-            position:relative;    left:80%;
             transition: width 2s, transform 2s, left 2s,opacity 2s;
-            font-size: 20px;  font-weight: bold;
             opacity: 0;
         }
         #div2,#div4,#div6{
            right: 80%;        position:relative;
            width: 300px;      height: 250px;
             transition: width 2s, transform 2s, right 2s,opacity 2s;
-            font-size: 20px;  font-weight: bold;
+            
             opacity: 0;
         }
           
@@ -152,7 +150,7 @@
 }
 #d1{background:url(1997.png);      background-size: cover;
     width:300px;                  height: 50px;   
-    margin-left: 16.5%;    
+       
     border: 1px solid black;
     animation-name: d1;
     animation-duration: 20s;
@@ -182,7 +180,7 @@
 }
 #d3{background:url(2001.png);      background-size: cover;
     width: 300px;                  height: 50px;   
-    margin-left: 16.5%;    
+       
     border: 1px solid black;
     animation-name: d3;
     animation-duration: 20s;
@@ -212,7 +210,7 @@
 }
 #d5{background:url(2013.png);      background-size: cover;
     width: 300px;                  height: 50px;   
-    margin-left: 16.5%;    
+       
     border: 1px solid black;
     animation-name: d5;
     animation-duration: 20s;
@@ -263,6 +261,10 @@
 	#d4{ width: 302px;margin-left: 60px;}
 	#d6{ width: 302px;margin-left: 60px;}
 	    }
+	    .gallery{
+            width: fit-content;
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
@@ -272,9 +274,12 @@
     <tr>
         <td>
             <div style="display: flex;"><span id="1h" style="color: red; font-size: 40px; margin-top: 24%;">❤️</span>
-            <div id="div1" onclick="show()"></div>
+             <div class="gallery">
+		    <div id="div1" onclick="show()"></div>
+		     <div class="date" id="d1"></div>
+	    </div>
             <span id="2h" style="color: red; font-size: 40px; margin-top: 24%; margin-left: 30px;">❤️</span></div>
-            <div class="date" id="d1"></div>
+            
         </td>
         <td rowspan="3"> 
             <div id="box">
@@ -284,38 +289,53 @@
         </td>
         <td>
             <div style="display: flex;"><span id="3h" style="color: red; font-size: 40px; margin-top: 24%;">❤️</span>
-            <div id="div2" onclick="show()"></div>
+            <div class="gallery">
+		    <div id="div2" onclick="show()"></div>
+	    	    <div class="date" id="d2"></div>
+		    </div>
             <span id="4h" style="color: red; font-size: 40px; margin-top: 24%; margin-left: 30px;">❤️</span></div>
-            <div class="date" id="d2"></div>
+           
         </td>
     </tr>
     <tr>
         <td>
             <div style="display: flex;"><span id="5h" style="color: red; font-size: 40px; margin-top: 24%;">❤️</span>
-            <div id="div3" onclick="show()"></div>
+            <div class="gallery">
+		    <div id="div3" onclick="show()"></div>
+	    		<div class="date" id="d3"></div>
+		    </div>
             <span id="6h" style="color: red; font-size: 40px; margin-top: 24%; margin-left: 30px;">❤️</span></div>
-            <div class="date" id="d3"></div>
+            
         </td>
             
         <td>
             <div style="display: flex;"><span id="7h" style="color: red; font-size: 40px; margin-top: 24%;">❤️</span>
-            <div id="div4" onclick="show()"></div>
+            <div class="gallery">
+		    <div id="div4" onclick="show()"></div>
+	    		<div class="date" id="d4"> </div>
+		    </div>
             <span id="8h" style="color: red; font-size: 40px; margin-top: 24%; margin-left: 30px;">❤️</span></div>
-            <div class="date" id="d4"> </div>
+            
         </td>
     </tr>
     <tr>
         <td>
             <div style="display: flex;"><span id="9h" style="color: red; font-size: 40px; margin-top: 24%;">❤️</span>
-            <div id="div5" onclick="show()"></div>
+            <div class="gallery">
+		    <div id="div5" onclick="show()"></div>
+            		<div class="date" id="d5"> </div>
+		    </div>
             <span id="10h"style="color: red; font-size: 40px; margin-top: 24%;  margin-left: 30px;">❤️</span></div>
-            <div class="date" id="d5"> </div>
+            
         </td>
         <td>
             <div style="display: flex;"><span id="11h" style="color: red; font-size: 40px; margin-top: 24%;">❤️</span>
-            <div id="div6" onclick="show()"></div>
+            <div class="gallery">
+		    <div id="div6" onclick="show()"></div>
+	    		<div class="date" id="d6"> </div>
+		    </div>
             <span id="12h" style="color: red; font-size: 40px; margin-top: 24%; margin-left: 30px;">❤️</span></div>
-            <div class="date" id="d6"> </div>
+            
         </td>
     </tr>
    
