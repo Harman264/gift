@@ -63,7 +63,7 @@
             text-align: center;
             color:rgb(237, 88, 66); font-size:90px;
             font-family: 'Tangerine', serif;
-            font-weight: 700;
+            font-weight: 700; display:none;
         }
         #div1{background:url(1997.jpg);background-repeat:no-repeat;
             animation-name: box1;        
@@ -233,7 +233,7 @@
 	width:80%;left:330px;margin-bottom:3px;
 	}
 	h3{
-		 position: relative; left:330px; font-size:100px;
+		 position: relative; left:300px; font-size:100px;
 	}
 	#d1{ width: 302px;  }
 	#d2{ width: 302px;}
@@ -320,7 +320,7 @@
     </tr>
    
 </table></div>
-	<h3>25 years of togetherness</h3>
+	<h3 id="h3">25 years of togetherness</h3>
  <audio  src="Teri.mp3" id="my_audio" loop="loop" ></audio>
  
 
@@ -330,7 +330,7 @@
             Scrolldown();
             document.getElementById("my_audio").play(); 
             document.getElementById("close").style.opacity="0";
-            document.getElementById("btn").style.display="none";
+            document.getElementById("btn").style.display="none"; document.getElementById("h3").style.display="block";
 
             document.getElementById("div1").style.transform="rotate(360deg)";  document.getElementById("div2").style.transform="rotate(360deg)";
             document.getElementById("div1").style.left="4%";                   document.getElementById("div2").style.right="-3%";
